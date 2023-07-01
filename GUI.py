@@ -1,9 +1,10 @@
 import PySimpleGUI as sg
+from Practice import foo
 
-label = sg.Text("Enter the term you want to search: ")
-input_box = sg.InputText(tooltip="Enter search term")
-search_button = sg.FileSaveAs("Search")
+label = sg.Text("Enter the password ")
+input_box = sg.InputText(key='password')
+check_button = sg.Button("Check")
 
-window = sg.Window('Search the term', layout=[[label], [input_box], [search_button]])
+window = sg.Window('Enter the password', layout=[[label], [input_box], [check_button]])
 window.read()
 window.close()

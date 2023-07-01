@@ -1,21 +1,16 @@
-print("Good afternoon!!!")
+import streamlit as st
 
-def foo():
-    p = input("enter the password: ")
-    return p
-
-user_pass = foo()
-print(user_pass)
-password = len(user_pass)
-
-if len(user_pass) >= 8:
-    print(f"The password is true")
-else:
-    print(f"The password is false")
-password = len(user_pass)
-print(password)
+st.title("Shiva the koja")
 
 
+st.write("1. Is shiva gay?")
+st.checkbox("yes")
+st.checkbox('YESSSSS he is gay!!!!!!')
+
+
+st.write("2. What is worlds most powerful currency?")
+st.checkbox("DOLLARS")
+st.checkbox("GYANS")
 
 
 

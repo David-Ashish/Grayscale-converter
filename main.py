@@ -29,13 +29,12 @@ while True:
         todos = get_todos("todos.txt")
 
         for index, item in enumerate(todos):
-            item = item.strip('\n')
             row = f"{index + 1}.{item}"
             print(row)
 
     elif user_action.startswith('edit'):
         try:
-            number = int(user_action[5:])
+            number = int(input(user_action[5:]))
             print(number)
 
             number = number - 1
