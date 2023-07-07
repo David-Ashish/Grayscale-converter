@@ -16,7 +16,7 @@ if camera_image:
 
     img = Image.open(camera_image)
     gray_img = img.convert("L")
-    st.write("Hey modala", user_name,", i will meet you very soon :)")
+    st.write("Hey", user_name,", this is your grayscale image :)")
     st.image(gray_img)
 
 if uploaded_image:
